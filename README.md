@@ -1,16 +1,52 @@
-# React + Vite
+# Elden Ring Boss Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Your personal companion for tracking boss defeats in Elden Ring. Never lose track of which bosses you've conquered!
 
-Currently, two official plugins are available:
+## What is This?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is an interactive tracker to help you keep track of all the bosses you've defeated in Elden Ring. As you explore the Lands Between, simply mark each boss as defeated in the tracker, and watch your progress bar fill up.
 
-## React Compiler
+Perfect for:
+- **First-time players** keeping track of all bosses they've found
+- **Completionists** aiming for 100% boss kills
+- **Challenge runners** tracking progress on specific playthroughs
+- **Multiple playthroughs** — your progress saves automatically!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Use
 
-## Expanding the ESLint configuration
+1. **Visit the tracker** - Open the app in your browser
+2. **Click a boss card** - Mark a boss as defeated once you've beaten them
+3. **Watch your progress** - See your completion percentage update in real-time
+4. **Check the wiki** - Click the "wiki ↗" link on any boss for detailed strategies
+5. **Your progress saves** - Automatically saved to your browser — no account needed!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- 📊 **Progress Tracking** - See your overall completion percentage and count
+- 🗂️ **Organized by Region** - Bosses grouped by location (Limgrave, Liurnia, Leyndell, etc.)
+- 🏷️ **DLC Bosses Marked** - Clearly identified Shadow of the Erdtree bosses
+- 🏷️ **Optional Bosses** - Know which ones are required vs. optional
+- 💾 **Auto-Save** - Your progress is saved locally in your browser
+- 📱 **Works Everywhere** - Desktop, tablet, mobile — fully responsive
+- ⚡ **Instant Loading** - Super fast, no lag
+
+## Tips
+
+- Click the **region headers** to collapse/expand groups if you just want to focus on one area
+- Your progress **persists** even if you close the browser or refresh
+- **Wiki links** provide strategies, locations, and lore for each boss
+- Defeated bosses are **grayed out** with a checkmark for easy visual scanning
+
+## Browser Requirements
+
+Works on any modern browser:
+- Chrome, Edge, Firefox, Safari
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## No Installation Needed
+
+Everything happens in your browser. Just visit the link and start tracking!
+
+---
+
+Made for Elden Ring lovers. Good luck, Tarnished! ⚔️
