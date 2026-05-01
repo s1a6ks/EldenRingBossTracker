@@ -1,0 +1,87 @@
+.boss-group {
+  margin-bottom: 48px;
+}
+
+.boss-group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-bottom: 10px;
+  gap: 12px;
+}
+
+.boss-group__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.boss-group__title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111;
+  margin: 0;
+}
+
+.boss-group__counter {
+  font-size: 12px;
+  color: #bbb;
+  font-variant-numeric: tabular-nums;
+}
+
+.boss-group__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.boss-group__pct {
+  font-size: 12px;
+  color: #999;
+  font-variant-numeric: tabular-nums;
+}
+
+.boss-group__chevron {
+  width: 16px;
+  height: 16px;
+  color: #ccc;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.boss-group__chevron.collapsed {
+  transform: rotate(-90deg);
+}
+
+/* Progress bar */
+.boss-group__bar {
+  height: 2px;
+  background: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.boss-group__bar-fill {
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* Grid */
+.boss-group__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .boss-group__grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+}

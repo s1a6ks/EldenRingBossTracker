@@ -1,0 +1,156 @@
+.boss-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+}
+
+.boss-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.boss-card.defeated {
+  border-color: #e0e0e0;
+}
+
+/* ── Image ── */
+.boss-card__image-wrap {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.boss-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.boss-card:hover .boss-card__image {
+  transform: scale(1.04);
+}
+
+.boss-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+/* Defeated image darkening */
+.boss-card.defeated .boss-card__image {
+  filter: brightness(0.28) saturate(0.2);
+}
+
+.boss-card.defeated .boss-card__overlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* ── Centered check ── */
+.boss-card__check {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: check-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.boss-card__check-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(34, 197, 94, 0.45);
+}
+
+.boss-card__check-circle svg {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+@keyframes check-in {
+  0%   { opacity: 0; transform: scale(0.5); }
+  70%  { transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ── Badges ── */
+.boss-card__badges {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  display: flex;
+  gap: 4px;
+}
+
+.badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.badge--dlc {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.badge--opt {
+  background: rgba(255,255,255,0.9);
+  color: #666;
+}
+
+/* ── Body ── */
+.boss-card__body {
+  padding: 14px 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.boss-card__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+.boss-card.defeated .boss-card__name {
+  color: #bbb;
+  text-decoration: line-through;
+  text-decoration-color: #d0d0d0;
+}
+
+.boss-card__wiki {
+  font-size: 11px;
+  color: #bbb;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.boss-card__wiki:hover {
+  color: #666;
+}
