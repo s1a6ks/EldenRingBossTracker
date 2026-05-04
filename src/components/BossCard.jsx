@@ -1,4 +1,4 @@
-import "./BossCard.css";
+﻿import "./BossCard.css";
 
 export function BossCard({ boss, onToggle }) {
   return (
