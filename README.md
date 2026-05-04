@@ -14,7 +14,7 @@ Perfect for:
 
 ## How to Use
 
-1. **Visit the tracker (https://s1a6ks.github.io/EldenRingBossTracker/)** - Open the app in your browser
+1. **Visit the tracker** - Open the app in your browser
 2. **Click a boss card** - Mark a boss as defeated once you've beaten them
 3. **Watch your progress** - See your completion percentage update in real-time
 4. **Check the wiki** - Click the "wiki ↗" link on any boss for detailed strategies
